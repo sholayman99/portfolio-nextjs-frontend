@@ -1,21 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: 'JetBrains Mono', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
+.text-outline {
+  -webkit-text-stroke: 1px #ffffff; /* White stroke */
+
+}
+
+.text-outline-hover {
+  -webkit-text-stroke: 1px #00ff99 !important; /* Green stroke */
+}
+
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --radius: 0.5rem;
+  }
+  body{
+    @apply bg-primary text-white leading-loose;
+  }
+  .h1{
+    @apply text-[48px] lg:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2{
+    @apply text-[36px] lg:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3{
+    @apply text-[20px] lg:text-[24px] leading-[1.1] font-semibold;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
