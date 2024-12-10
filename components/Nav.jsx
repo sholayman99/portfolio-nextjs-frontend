@@ -25,7 +25,7 @@ const links = [
     },
 ];
 
-function Nav() {
+export default function Nav() {
     const pathname = usePathname();
     return (
         <nav className={"flex gap-8"}>
@@ -47,4 +47,3 @@ function Nav() {
     );
 }
 
-export default Nav;

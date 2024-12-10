@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Nav from "@/components/Nav";
+import MobileNav from "@/components/MobileNav";
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -39,7 +40,7 @@ function Header() {
                 </div>
                 {/* Mobile Nav */}
                 <div className={"xl:hidden"}>
-                    {/* <MobileNav /> */}
+                     <MobileNav />
                 </div>
             </div>
         </header>
