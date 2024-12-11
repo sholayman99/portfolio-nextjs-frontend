@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Nav from "@/components/Nav";
 import MobileNav from "@/components/MobileNav";
+import {FiDownload} from "react-icons/fi";
+import {MdKeyboardDoubleArrowRight} from "react-icons/md";
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -35,12 +37,14 @@ function Header() {
                 <div className={"hidden xl:flex items-center gap-8"}>
                      <Nav />
                     <Link href={"/"}>
-                        <Button>Hire me</Button>
+                        <Button variant={"outline"}>
+                            Hire me <MdKeyboardDoubleArrowRight />
+                        </Button>
                     </Link>
                 </div>
                 {/* Mobile Nav */}
                 <div className={"xl:hidden"}>
-                     <MobileNav />
+                    <MobileNav/>
                 </div>
             </div>
         </header>
