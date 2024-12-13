@@ -34,3 +34,37 @@ body {
   }
 }
 
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9fafb; /* Light gray background */
+}
+
+.spinner {
+  font-size: 4rem; /* Adjust size of the icon */
+  color: #252734; /* Indigo color */
+  animation: spin 1.5s linear infinite; /* Spinner rotation */
+}
+
+/* Spinner rotation animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.social-icon {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.social-icon:hover {
+  fill: #2A2C39;
+}
+
+
+

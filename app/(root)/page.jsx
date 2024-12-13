@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Photo from "@/components/Photo";
 import {TypeAnimation} from "react-type-animation";
+import Socials from "@/components/Socials";
 
 
 
@@ -48,6 +49,9 @@ const Home = () => {
                               border-accent/60 hover:border-white flex items-center gap-x-2 mt-16 transition-colors duration-500 ease-in`} >
                             Get Resume <FiDownload/>
                         </button>
+                        <div>
+                            <Socials />
+                        </div>
 
                     </div>
 
