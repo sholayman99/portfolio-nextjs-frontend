@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Photo from "@/components/Photo";
 import {TypeAnimation} from "react-type-animation";
@@ -15,7 +14,7 @@ const Home = () => {
             <div className={"container mx-auto w-full"}>
                 <div
                     className={
-                        "flex flex-col xl:flex-row lg:items-start items-center justify-between xl:pt-8 mx:pb-24"}
+                        "flex flex-col gap-y-10 xl:flex-row lg:items-start items-center justify-between xl:pt-8 mx:pb-24"}
                 >
                     {/*text*/}
                     <div className="flex flex-col lg:items-start items-center order-2 lg:order-none">

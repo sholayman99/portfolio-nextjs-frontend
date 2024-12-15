@@ -24,11 +24,17 @@ const Socials = () => {
             {data.map((item, i) => (
                 <div key={i}>
                     <div
-                        dangerouslySetInnerHTML={{ __html: item.icon }}
-                        className={`social-icon rounded-full hover:bg-white w-[38px] h-[38px] flex items-center justify-center
-                        transition-all ease-[cubic-bezier(0.25, 0.8, 0.25, 1)] duration-700 cursor-pointer opacity-70
-                        hover:scale-105 hover:opacity-100 hover:shadow-[0_4px_15px_rgba(0,0,0,0.2)]`}
-                    />
+                        className="relative group w-[38px] h-[38px] rounded-full cursor-pointer flex items-center justify-center">
+                        {/* Background Effect */}
+                        <div
+                            className="absolute inset-0 bg-accent rounded-full transition-transform scale-110 opacity-100 group-hover:scale-100 group-hover:bg-white"></div>
+                        {/* Icon or Content */}
+                        <div
+                            dangerouslySetInnerHTML={{__html: item.icon}}
+                            className="relative text-white transition-opacity duration-300 group-hover:opacity-100 opacity-70"
+                        ></div>
+                    </div>
+
                 </div>
             ))}
         </div>

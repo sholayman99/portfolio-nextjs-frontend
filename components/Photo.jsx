@@ -22,7 +22,8 @@ function Photo() {
                         opacity: 1,
                         transition: { delay: 0.5, duration: 0.4, ease: "easeInOut" },
                     }}
-                    className="absolute w-[250px] h-[240px] md:w-[300px] md:h-[290px] lg:w-[400px] lg:h-[400px] mix-blend-lighten flex items-center justify-center"
+                    className="absolute w-[250px] h-[240px] md:w-[300px] md:h-[290px] lg:w-[400px] lg:h-[400px] mix-blend-lighten flex items-center
+                    justify-center"
                 >
                     <Image
                         src={"/images/me.png"}
@@ -36,7 +37,7 @@ function Photo() {
 
                 {/* Circle */}
                 <motion.svg
-                    className={"w-[290px]  h-[300px] md:w-[350px] md:h-[350px] lg:w-[480px] lg:h-[480px]"}
+                    className={"w-[290px]  h-[300px] md:w-[350px] md:h-[350px] lg:w-[470px] lg:h-[470px]"}
                     fill={"transparent"}
                     viewBox={"0 0 506 506"}
                     xmlns={"http://www.w3.org/2000/svg"}

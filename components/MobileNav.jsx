@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
 
 const links = [
     { name: "home", path: "/" },
+    { name: "work", path: "/work" },
     { name: "services", path: "/services" },
     { name: "resume", path: "/resume" },
-    { name: "work", path: "/work" },
     { name: "contact", path: "/contact" },
 ];
 
@@ -29,7 +29,7 @@ function MobileNav() {
                 <CiMenuFries className="text-[32px] text-white" />
             </SheetTrigger>
             <SheetContent className="flex flex-col">
-                {/* Add DialogTitle with VisuallyHidden to meet Radix UI's accessibility requirement */}
+                {/* Add DialogTitle with VisuallyHidden to meet Radix UI's accessibility requirement*/}
                 {/*<VisuallyHidden asChild>*/}
                 {/*    <DialogTitle>Navigation Menu</DialogTitle>*/}
                 {/*</VisuallyHidden>*/}
