@@ -43,10 +43,9 @@ const Home = () => {
                                 repeat={Infinity}
                             />
                         </div>
-                        <button
-                            className={`py-5 px-16 text-lg text-accent hover:text-white bg-primary rounded-full border-[0.1px] hover:bg-primary-hover
-                              border-accent/60 hover:border-white flex items-center gap-x-2 mt-16 transition-colors duration-500 ease-in`} >
-                            Get Resume <FiDownload/>
+                        <button className={`py-5 px-16 text-lg text-accent hover:text-white bg-primary rounded-full border-[0.1px] hover:bg-primary-hover
+                              border-accent/60 hover:border-white flex items-center gap-x-2 mt-16 transition-colors duration-500 ease-in group`} >
+                             Get Resume<FiDownload />
                         </button>
                         <div>
                             <Socials />

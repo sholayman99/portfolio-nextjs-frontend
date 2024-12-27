@@ -22,7 +22,7 @@ function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 w-full bg-primary text-white z-50 transition-shadow ${
+            className={`fixed top-0 left-0 w-full bg-primary  text-white z-50 transition-shadow ${
                 scrolled ? "shadow-md" : "shadow-none"
             }`}
         >
