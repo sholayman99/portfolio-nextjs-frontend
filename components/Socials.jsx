@@ -2,6 +2,7 @@
 
 import { fetchSocials } from "@/api/social";
 import { useQuery } from "@tanstack/react-query";
+import SocialsSkeleton from "@/app/skeletons/SocialsSkeleton";
 
 const Socials = () => {
     const { isLoading, isError, data, error } = useQuery({
@@ -12,7 +13,7 @@ const Socials = () => {
     console.log(data);
 
     if (isLoading) {
-        return <div>Loading socials...</div>;
+        return <SocialsSkeleton />;
     }
 
     if (isError) {
@@ -21,7 +22,7 @@ const Socials = () => {
 
     return (
         <div className="flex gap-x-5 mt-10">
-            {data.map((item, i) => (
+            {data?.map((item, i) => (
                 <div key={i}>
                     <div
                         className="relative group w-[38px] h-[38px] rounded-full cursor-pointer flex items-center justify-center">
