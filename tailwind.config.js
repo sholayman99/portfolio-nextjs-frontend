@@ -36,6 +36,9 @@ module.exports = {
 					DEFAULT: "#858792"
 				},
 			},
+			boxShadow: {
+				glow: "0 0 10px rgba(192, 132, 252, 0.5)",
+			},
 			borderRadius: {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",

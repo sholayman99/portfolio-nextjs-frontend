@@ -5,10 +5,11 @@ const CommonTitle = () => {
         <motion.div className={"flex flex-col gap-y-3"}  initial={{x: -200}} transition={{duration: 1.5, ease: "easeOut"}} whileInView={{x: 0}}>
             <div className={`flex items-center gap-x-3 title-text`}
                        >
-                <div className={`flex items-center gap-1 `}>
-                    <div className={"w-0.5 h-6 rounded bg-[#ffffff]"}></div>
-                    <div className={"w-0.5 h-6 rounded bg-[#ffffff]"}></div>
+                <div className="flex items-center gap-1">
+                    <div className="w-0.5 h-6 rounded bg-[#76E4F7] shadow-[0_0_8px_#76E4F7]"></div>
+                    <div className="w-0.5 h-6 rounded bg-[#76E4F7] shadow-[0_0_8px_#76E4F7]"></div>
                 </div>
+
                 <h2 className={"text-4xl font-serif"}>ABOUT ME</h2>
 
             </div>

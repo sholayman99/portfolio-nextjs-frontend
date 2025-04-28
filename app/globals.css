@@ -46,7 +46,7 @@ body {
 .spinner {
   font-size: 4rem; /* Adjust size of the icon */
   color: #252734; /* Indigo color */
-  animation: spin 1.5s linear infinite; /* Spinner rotation */
+  animation: spin 1s linear infinite; /* Spinner rotation */
 }
 
 /* Spinner rotation animation */
@@ -78,49 +78,49 @@ body {
 }
 
 @keyframes lights {
-  0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-            0 0 1em hsla(320, 100%, 50%, 0.2),
-            0 0 0.125em hsla(320, 100%, 60%, 0.3),
-            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
+    0% {
+        color: #76E4F7;
+        text-shadow:
+                0 0 1em rgba(118, 228, 247, 0.2),
+                0 0 0.125em rgba(118, 228, 247, 0.3),
+                -1em -0.125em 0.5em rgba(118, 228, 247, 0),
+                1em 0.125em 0.5em rgba(118, 228, 247, 0);
+    }
 
-  30% {
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-            0 0 1em hsla(320, 100%, 50%, 0.5),
-            0 0 0.125em hsla(320, 100%, 60%, 0.5),
-            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
+    30% {
+        color: #a0effa;
+        text-shadow:
+                0 0 1em rgba(118, 228, 247, 0.5),
+                0 0 0.125em rgba(118, 228, 247, 0.5),
+                -0.5em -0.125em 0.25em rgba(118, 228, 247, 0.2),
+                0.5em 0.125em 0.25em rgba(118, 228, 247, 0.4);
+    }
 
-  40% {
-    color: hsl(230, 100%, 95%);
-    text-shadow:
-            0 0 1em hsla(320, 100%, 50%, 0.5),
-            0 0 0.125em hsla(320, 100%, 90%, 0.5),
-            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
+    40% {
+        color: #c2f6fb;
+        text-shadow:
+                0 0 1em rgba(118, 228, 247, 0.5),
+                0 0 0.125em rgba(200, 245, 250, 0.5),
+                -0.25em -0.125em 0.125em rgba(118, 228, 247, 0.2),
+                0.25em 0.125em 0.125em rgba(118, 228, 247, 0.4);
+    }
 
-  70% {
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-            0 0 1em hsla(320, 100%, 50%, 0.5),
-            0 0 0.125em hsla(320, 100%, 60%, 0.5),
-            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
+    70% {
+        color: #a0effa;
+        text-shadow:
+                0 0 1em rgba(118, 228, 247, 0.5),
+                0 0 0.125em rgba(118, 228, 247, 0.5),
+                0.5em -0.125em 0.25em rgba(118, 228, 247, 0.2),
+                -0.5em 0.125em 0.25em rgba(118, 228, 247, 0.4);
+    }
 
-  100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-            0 0 1em hsla(320, 100%, 50%, 0.2),
-            0 0 0.125em hsla(320, 100%, 60%, 0.3),
-            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-
+    100% {
+        color: #76E4F7;
+        text-shadow:
+                0 0 1em rgba(118, 228, 247, 0.2),
+                0 0 0.125em rgba(118, 228, 247, 0.3),
+                1em -0.125em 0.5em rgba(118, 228, 247, 0),
+                -1em 0.125em 0.5em rgba(118, 228, 247, 0);
+    }
 }
+

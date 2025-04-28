@@ -1,19 +1,33 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Loader from "@/components/Loader";
+import { usePathname, useSearchParams } from "next/navigation";
+import { AnimatePresence } from "framer-motion";
+import Loader from "./Loader";
 
 export default function LoaderWrapper({ children }) {
-    const [isHydrated, setIsHydrated] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
 
     useEffect(() => {
-        const timer = setTimeout(() => setIsHydrated(true), 500);
+        const timer = setTimeout(() => setIsLoading(false), 2000);
         return () => clearTimeout(timer);
     }, []);
 
-    if (!isHydrated) {
-        return <Loader />;
-    }
+    useEffect(() => {
+        setIsLoading(true);
+        const timer = setTimeout(() => setIsLoading(false), 1000);
+        return () => clearTimeout(timer);
+    }, [pathname, searchParams]);
 
-    return <>{children}</>;
+    return (
+        <>
+            <AnimatePresence mode="wait">
+                {isLoading && <Loader />}
+            </AnimatePresence>
+
+            {!isLoading && children}
+        </>
+    );
 }

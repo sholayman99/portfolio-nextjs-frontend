@@ -1,6 +1,7 @@
 import "./globals.css";
 import LoaderWrapper from "@/components/LoaderWrapper";
 import QueryProvider from "@/components/QueryClientProvider";
+import Header from "@/components/Header";
 
 
 export const metadata = {
@@ -15,7 +16,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <body>
     <QueryProvider>
-      <LoaderWrapper>{children}</LoaderWrapper>
+      <LoaderWrapper>
+        <Header />
+        <main className="lg:pt-[150px] pt-[120px]">
+          {children}
+        </main>
+      </LoaderWrapper>
     </QueryProvider>
     </body>
     </html>

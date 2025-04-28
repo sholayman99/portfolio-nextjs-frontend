@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Nav from "@/components/Nav";
 import MobileNav from "@/components/MobileNav";
-import {FiDownload} from "react-icons/fi";
 import {MdKeyboardDoubleArrowRight} from "react-icons/md";
+import CommonButton from "@/components/CommonButton";
+
+
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -33,13 +34,16 @@ function Header() {
                         MS<span className={"text-accent"}>.</span>
                     </h1>
                 </Link>
-                {/* Desktop Nav & Hire Me Button */}
+                {/* Desktop Nav & Hire Me CommonButton */}
                 <div className={"hidden xl:flex items-center gap-8"}>
                      <Nav />
                     <Link href={"/"}>
-                        <Button variant={"outline"}>
-                            Hire me <MdKeyboardDoubleArrowRight />
-                        </Button>
+                        <CommonButton
+                            icon={MdKeyboardDoubleArrowRight}
+                            text={"Hire me"}
+                            size={"sm"}>
+                            Hire me
+                        </CommonButton>
                     </Link>
                 </div>
                 {/* Mobile Nav */}
