@@ -19,20 +19,23 @@ const Socials = () => {
     }
 
     return (
-        <div className="flex gap-x-5 mt-10">
+        <div className="flex gap-x-5">
             {data?.map((item, i) => (
                 <div key={i}>
-                    <div className="relative group w-[38px] h-[38px] rounded-full cursor-pointer flex items-center justify-center hover:scale-110 transition-all duration-300">
-                        {/* Glow background (static light) */}
-                        <div className="absolute inset-0 bg-[#76E4F7] opacity-30 rounded-full blur-md scale-110"></div>
+                    <div className="relative group w-[42px] h-[42px] rounded-full cursor-pointer flex items-center justify-center">
+                        {/* Glow background with subtle pulse animation */}
+                        <div className="absolute inset-0 bg-accent/30 rounded-full blur-md scale-110 opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-[1.15]"></div>
 
-                        {/* White background on hover */}
-                        <div className="absolute inset-0 bg-[#76E4F7] rounded-full transition-all duration-500 scale-0 group-hover:scale-110 opacity-0 group-hover:opacity-100"></div>
+                        {/* Animated ring effect on hover */}
+                        <div className="absolute inset-0 border-2 border-white/20 rounded-full scale-90 group-hover:scale-110 group-hover:border-white/50 transition-all duration-700"></div>
 
-                        {/* Icon */}
+                        {/* Main circle with elegant hover transition */}
+                        <div className="absolute inset-0 bg-white/10 rounded-full backdrop-blur-sm scale-95 group-hover:scale-100 group-hover:bg-white transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"></div>
+
+                        {/* Icon with perfect color transition */}
                         <div
                             dangerouslySetInnerHTML={{ __html: item.icon }}
-                            className="relative text-[#76E4F7] transition-all duration-500 ease-in-out opacity-80 group-hover:opacity-100 group-hover:scale-110 group-hover:rotate-12"
+                            className="relative transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] opacity-90 group-hover:opacity-100 [&>svg]:w-[20px] [&>svg]:h-[20px] [&>svg]:fill-white group-hover:[&>svg]:fill-black group-hover:[&>svg]:scale-110"
                         />
                     </div>
                 </div>

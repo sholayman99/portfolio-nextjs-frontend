@@ -3,13 +3,12 @@ import {TypeAnimation} from "react-type-animation";
 import {FiDownload} from "react-icons/fi";
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
-import CommonButton from "@/components/CommonButton";
+import CommonButton from "@/components/common/CommonButton";
 
 
-const Intro = () => {
+const Hero = () => {
     return (
-        <div className={"container mx-auto w-full"}>
-            <div className={"flex flex-col gap-y-10 xl:flex-row lg:items-start items-center justify-between xl:pt-8 mx:pb-24"}>
+            <div className={"flex flex-col gap-y-10 xl:flex-row lg:items-start items-center justify-between xl:pt-8"}>
                 {/*text*/}
                 <div className="flex flex-col lg:items-start items-center order-2 lg:order-none">
                     <div className="text-3xl md:text-4xl lg:text-6xl text-white font-semibold font-serif">
@@ -18,9 +17,8 @@ const Intro = () => {
                     <div className="text-4xl md:text-5xl lg:text-7xl text-white font-semibold font-serif mt-2">
                         <span className="font-semibold">Md. Sholayman</span>
                     </div>
-
                     {/* Animated text */}
-                    <div className="text-xl lg:text-2xl text-accent font-medium my-6">
+                    <div className="text-xl lg:text-2xl text-accent font-medium mt-4">
                         <TypeAnimation
                             sequence={[
                                 'MERN Stack Developer',
@@ -37,15 +35,14 @@ const Intro = () => {
                             repeat={Infinity}
                         />
                     </div>
+                    <div className={"mt-5 mb-10"}>
+                        <Socials/>
+                    </div>
                     <CommonButton
                         icon={FiDownload}
 
                     >
                     </CommonButton>
-                    <div>
-                        <Socials/>
-                    </div>
-
                 </div>
 
                 {/*photo*/}
@@ -53,10 +50,9 @@ const Intro = () => {
                     <Photo/>
                 </div>
             </div>
-        </div>
     );
 };
 
-export default Intro;
+export default Hero;
 
 

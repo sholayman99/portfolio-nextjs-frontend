@@ -35,7 +35,7 @@ function MobileNav() {
                 {/*</VisuallyHidden>*/}
 
                 <div className="mt-10 mb-16 text-center text-2xl">
-                    <Link href="/">
+                    <Link href="/public">
                         <h1 className="text-4xl font-semibold">
                             MS<span className="text-accent">.</span>
                         </h1>

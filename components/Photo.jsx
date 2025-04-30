@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Photo() {
     return (
-        <div className="relative w-full h-screen">
+        <div className="relative w-full">
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{

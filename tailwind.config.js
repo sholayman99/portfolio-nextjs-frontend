@@ -45,8 +45,12 @@ module.exports = {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			fontFamily:{
-				sans:["Roboto", "sans-serif"],
-				serif:["Cormorant Garamond", "serif"]
+				sans:["Open Sans", "sans-serif"],
+				serif:["Cormorant Garamond", "serif"],
+				mono:["Playfair Display", "sans-serif"],
+				roboto:["Roboto", "sans-serif"],
+				inter:["Inter", "sans-serif"],
+
 			}
 		},
 	},

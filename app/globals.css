@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -74,53 +74,53 @@ body {
   font-weight: 500;
   animation: lights 5s 750ms linear infinite;
   color: hsl(228, 42%, 86%);
-  font-family: 'Merienda', sans-serif;
 }
 
 @keyframes lights {
     0% {
-        color: #76E4F7;
+        color: #E8E8E8;
         text-shadow:
-                0 0 1em rgba(118, 228, 247, 0.2),
-                0 0 0.125em rgba(118, 228, 247, 0.3),
-                -1em -0.125em 0.5em rgba(118, 228, 247, 0),
-                1em 0.125em 0.5em rgba(118, 228, 247, 0);
+                0 0 1em #FFFFFF,
+                0 0 0.125em #e8e1e1,
+                -1em -0.125em 0.5em rgba(184, 180, 180, 0),
+                1em 0.125em 0.5em rgba(184, 180, 180, 0);
     }
 
     30% {
-        color: #a0effa;
+        color: #FFFFFF;
         text-shadow:
-                0 0 1em rgba(118, 228, 247, 0.5),
-                0 0 0.125em rgba(118, 228, 247, 0.5),
-                -0.5em -0.125em 0.25em rgba(118, 228, 247, 0.2),
-                0.5em 0.125em 0.25em rgba(118, 228, 247, 0.4);
+                0 0 1em #e8e1e1,
+                0 0 0.125em #FFFFFF,
+                -0.5em -0.125em 0.25em #b0abab,
+                0.5em 0.125em 0.25em rgba(184, 180, 180, 0.4);
     }
 
     40% {
-        color: #c2f6fb;
+        color: #e8e1e1;
         text-shadow:
-                0 0 1em rgba(118, 228, 247, 0.5),
-                0 0 0.125em rgba(200, 245, 250, 0.5),
-                -0.25em -0.125em 0.125em rgba(118, 228, 247, 0.2),
-                0.25em 0.125em 0.125em rgba(118, 228, 247, 0.4);
+                0 0 1em #FFFFFF,
+                0 0 0.125em #e8e1e1,
+                -0.25em -0.125em 0.125em #b0abab,
+                0.25em 0.125em 0.125em rgba(184, 180, 180, 0.4);
     }
 
     70% {
-        color: #a0effa;
+        color: #E8E8E8;
         text-shadow:
-                0 0 1em rgba(118, 228, 247, 0.5),
-                0 0 0.125em rgba(118, 228, 247, 0.5),
-                0.5em -0.125em 0.25em rgba(118, 228, 247, 0.2),
-                -0.5em 0.125em 0.25em rgba(118, 228, 247, 0.4);
+                0 0 1em #FFFFFF,
+                0 0 0.125em #e8e1e1,
+                0.5em -0.125em 0.25em #b0abab,
+                -0.5em 0.125em 0.25em rgba(184, 180, 180, 0.4);
     }
 
     100% {
-        color: #76E4F7;
+        color: #FFFFFF;
         text-shadow:
-                0 0 1em rgba(118, 228, 247, 0.2),
-                0 0 0.125em rgba(118, 228, 247, 0.3),
-                1em -0.125em 0.5em rgba(118, 228, 247, 0),
-                -1em 0.125em 0.5em rgba(118, 228, 247, 0);
+                0 0 1em #e8e1e1,
+                0 0 0.125em #b0abab,
+                1em -0.125em 0.5em rgba(184, 180, 180, 0),
+                -1em 0.125em 0.5em rgba(184, 180, 180, 0);
     }
 }
+
 

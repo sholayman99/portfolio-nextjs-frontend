@@ -1,7 +1,7 @@
 import "./globals.css";
-import LoaderWrapper from "@/components/LoaderWrapper";
-import QueryProvider from "@/components/QueryClientProvider";
-import Header from "@/components/Header";
+import LoaderWrapper from "@/components/shared/LoaderWrapper";
+import QueryProvider from "@/components/shared/QueryClientProvider";
+import Header from "@/components/layout/Header";
 
 
 export const metadata = {

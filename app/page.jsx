@@ -1,15 +1,15 @@
 "use client";
 
 import AboutMe from "@/components/AboutMe";
-import Intro from "@/components/Intro";
+import Hero from "@/components/Hero";
 
 
 const Home = () => {
     return (
         <>
-            <section className={"min-h-screen"}>
-               <Intro />
-                <AboutMe/>
+            <section className={"container mx-auto"}>
+               <Hero />
+               <AboutMe/>
             </section>
         </>
     );
