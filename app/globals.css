@@ -78,49 +78,50 @@ body {
 
 @keyframes lights {
     0% {
-        color: #E8E8E8;
+        color: #D1D1D1; /* Slightly darker gray */
         text-shadow:
-                0 0 1em #FFFFFF,
-                0 0 0.125em #e8e1e1,
+                0 0 1em #D1D1D1,
+                0 0 0.125em #d1cfcf,
                 -1em -0.125em 0.5em rgba(184, 180, 180, 0),
                 1em 0.125em 0.5em rgba(184, 180, 180, 0);
     }
 
     30% {
-        color: #FFFFFF;
+        color: #E1E1E1; /* Slightly softer white */
         text-shadow:
-                0 0 1em #e8e1e1,
-                0 0 0.125em #FFFFFF,
+                0 0 1em #d1cfcf,
+                0 0 0.125em #E1E1E1,
                 -0.5em -0.125em 0.25em #b0abab,
                 0.5em 0.125em 0.25em rgba(184, 180, 180, 0.4);
     }
 
     40% {
-        color: #e8e1e1;
+        color: #D1D1D1;
         text-shadow:
-                0 0 1em #FFFFFF,
-                0 0 0.125em #e8e1e1,
+                0 0 1em #E1E1E1,
+                0 0 0.125em #D1D1D1,
                 -0.25em -0.125em 0.125em #b0abab,
                 0.25em 0.125em 0.125em rgba(184, 180, 180, 0.4);
     }
 
     70% {
-        color: #E8E8E8;
+        color: #D1D1D1;
         text-shadow:
-                0 0 1em #FFFFFF,
-                0 0 0.125em #e8e1e1,
+                0 0 1em #e1e1e1,
+                0 0 0.125em #d1cfcf,
                 0.5em -0.125em 0.25em #b0abab,
                 -0.5em 0.125em 0.25em rgba(184, 180, 180, 0.4);
     }
 
     100% {
-        color: #FFFFFF;
+        color: #E1E1E1;
         text-shadow:
-                0 0 1em #e8e1e1,
+                0 0 1em #d1cfcf,
                 0 0 0.125em #b0abab,
                 1em -0.125em 0.5em rgba(184, 180, 180, 0),
                 -1em 0.125em 0.5em rgba(184, 180, 180, 0);
     }
 }
+
 
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { fetchSocials } from "@/api/social";
+import { fetchSocials } from "@/api";
 import { useQuery } from "@tanstack/react-query";
 import SocialsSkeleton from "@/app/skeletons/SocialsSkeleton";
 
