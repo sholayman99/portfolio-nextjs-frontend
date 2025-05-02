@@ -1,13 +1,13 @@
 "use client"
 
-import { FiAward } from "react-icons/fi";
+import { MdInterests } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const InterestsCard = ({ interests }) => {
     return (
         <div className="p-6 rounded-xl backdrop-blur-sm border border-gray-700/50 shadow-xl">
             <h2 className="text-2xl font-mono font-semibold mb-6 flex items-center tracking-tight">
-                <FiAward className="text-accent mr-3 text-2xl" />
+                <MdInterests className="text-accent mr-3 text-2xl" />
                 Interests
             </h2>
             <div className="flex flex-wrap gap-2">

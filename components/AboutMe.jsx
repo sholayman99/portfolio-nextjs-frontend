@@ -11,6 +11,7 @@ import SkillsCard from "@/components/about/SkillsCard";
 import QualificationCard from "@/components/about/QualificationCard";
 import SoftSkillsCard from "@/components/about/SoftSkillsCard";
 import WorkExperienceCard from "@/components/about/WorkExperienceCard";
+import CertificationCard from "@/components/about/CertificationCard";
 
 const AboutMe = () => {
     const { isLoading, isError, data, error, refetch } = useQuery({
@@ -50,7 +51,7 @@ const AboutMe = () => {
     }
 
     return (
-        <section id="about" className="lg:pt-[150px] pt-[120px] leading-relaxed">
+        <section id="about" className="lg:py-[150px] pt-[120px] leading-relaxed">
             <CommonTitle
                 title="ABOUT ME"
                 subtitle="Discover more about my background, skills, and professional journey in technology and development."
@@ -78,7 +79,7 @@ const AboutMe = () => {
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                     >
                         <SkillsCard skills={data?.about?.skills} />
                     </motion.div>
@@ -86,17 +87,17 @@ const AboutMe = () => {
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                     >
-                        <SoftSkillsCard softSkills={data?.about?.softSkills} />
+                        <WorkExperienceCard workExperience={data?.about?.workExperience} />
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                     >
-                        <WorkExperienceCard workExperience={data?.about?.workExperience} />
+                        <CertificationCard certifications={data?.about?.certifications} />
                     </motion.div>
                 </div>
                 {/* Right Column - Personal Info (1/3 width) */}
@@ -104,14 +105,30 @@ const AboutMe = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                        viewport={{ once: false }}
+                    >
+                        <SoftSkillsCard softSkills={data?.about?.softSkills} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                         viewport={{ once: false }}
                     >
                         <PersonalInfoCard
-                            age={data?.about?.age}
+                            age={data?.about?.calculatedAge}
                             email={data?.about?.email}
                             phone={data?.about?.phone}
                         />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                        viewport={{ once: false }}
+                    >
+                        <QualificationCard qualification={data?.about?.qualification} />
                     </motion.div>
 
                     <motion.div
@@ -123,14 +140,6 @@ const AboutMe = () => {
                         <InterestsCard interests={data?.about?.interests} />
                     </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 40 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
-                        viewport={{ once: false }}
-                    >
-                        <QualificationCard qualification={data?.about?.qualification} />
-                    </motion.div>
                 </div>
             </div>
         </section>
