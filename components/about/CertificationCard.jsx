@@ -22,10 +22,10 @@ const CertificationCard = ({ certifications }) => {
     const displayCertifications = showAll ? certifications : filteredCertifications;
 
     return (
-        <div className="p-6 backdrop-blur border border-gray-700/50 shadow-xl rounded-lg">
+        <div className="p-6 backdrop-blur border border-primary/50 shadow-xl rounded-lg">
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-mono font-semibold text-white flex items-center tracking-tight">
-                    <FaCertificate className="text-accent mr-3 text-2xl" />
+                <h2 className="text-2xl font-mono font-semibold text-primary-hover flex items-center tracking-tight">
+                    <FaCertificate className=" mr-3 text-2xl" />
                     Certifications
                 </h2>
 
@@ -49,7 +49,7 @@ const CertificationCard = ({ certifications }) => {
                     displayCertifications.map((certification, index) => (
                         <motion.div
                             key={index}
-                            className="bg-accent/10 border p-4 rounded-lg border-l-4 border-accent"
+                            className="bg-white/5  p-4 rounded-lg border-l-4 border-primary"
                             initial={{ opacity: 0, x: -10 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.1 * index }}
@@ -60,11 +60,11 @@ const CertificationCard = ({ certifications }) => {
                                     {certification.title}
                                 </h3>
                                 {certification.timeline.includes("Present") ? (
-                                    <span className="text-xs bg-accent/20 text-white px-2 py-1 rounded">
+                                    <span className="text-xs bg-white/5 text-primary px-2 py-1 rounded">
                                         Current
                                     </span>
                                 ) : (
-                                    <span className="text-xs bg-gray-600/20 text-gray-300 px-2 py-1 rounded">
+                                    <span className="text-xs bg-gray-600/20 text-white px-2 py-1 rounded">
                                         Completed
                                     </span>
                                 )}
@@ -72,16 +72,16 @@ const CertificationCard = ({ certifications }) => {
                             <div className={"flex items-start justify-between"}>
                             <div>
                                 <div className="flex items-start">
-                                    <span className="text-accent font-medium min-w-[90px]">Institute:</span>
+                                    <span className="text-primary font-medium min-w-[90px]">Institute:</span>
                                     <span className="text-white">{certification.institute}</span>
                                 </div>
                                 <div className="flex items-start">
-                                    <span className="text-accent font-medium min-w-[90px]">Batch:</span>
+                                    <span className="text-primary font-medium min-w-[90px]">Batch:</span>
                                     <span className="text-white">{certification.batch}</span>
                                 </div>
                             </div>
                                 <div className="flex justify-end">
-                                    <span className="text-accent text-sm">{certification.timeline}</span>
+                                    <span className="text-white text-xs">{certification.timeline}</span>
                                 </div>
                             </div>
                         </motion.div>
@@ -97,7 +97,7 @@ const CertificationCard = ({ certifications }) => {
             {!showAll && certifications.length > 0 && (
                 <button
                     onClick={() => setShowAll(true)}
-                    className="flex items-center text-accent mt-4 text-sm hover:text-white transition-colors"
+                    className="flex items-center text-primary mt-4 text-sm hover:text-white transition-colors"
                 >
                     <FiChevronDown className="mr-1" />
                     See  {certifications.length} More Certifications
@@ -108,7 +108,7 @@ const CertificationCard = ({ certifications }) => {
             {showAll && (
                 <button
                     onClick={() => setShowAll(false)}
-                    className="flex items-center text-accent mt-4 text-sm hover:text-white transition-colors"
+                    className="flex items-center text-primary mt-4 text-sm hover:text-white transition-colors"
                 >
                     <FiChevronUp className="mr-1" />
                     Show Filtered View

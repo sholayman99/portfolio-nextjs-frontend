@@ -2,6 +2,7 @@ import "./globals.css";
 import LoaderWrapper from "@/components/shared/LoaderWrapper";
 import QueryProvider from "@/components/shared/QueryClientProvider";
 import Header from "@/components/layout/Header";
+import GradientBackground from "@/components/shared/GradientBackground";
 
 
 export const metadata = {
@@ -17,10 +18,12 @@ export default function RootLayout({ children }) {
     <body>
     <QueryProvider>
       <LoaderWrapper>
-        <Header />
-        <main className="lg:pt-[150px] pt-[120px]">
-          {children}
-        </main>
+       <GradientBackground>
+         <Header />
+         <main className="lg:pt-[150px] pt-[120px]">
+           {children}
+         </main>
+       </GradientBackground>
       </LoaderWrapper>
     </QueryProvider>
     </body>

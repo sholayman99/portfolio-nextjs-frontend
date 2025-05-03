@@ -26,7 +26,7 @@ function MobileNav() {
     return (
         <Sheet>
             <SheetTrigger className="flex justify-center items-center">
-                <CiMenuFries className="text-[32px] text-white" />
+                <CiMenuFries className="text-[32px] text-primary hover:text-primary-hover" />
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 {/* Add DialogTitle with VisuallyHidden to meet Radix UI's accessibility requirement*/}
@@ -37,7 +37,7 @@ function MobileNav() {
                 <div className="mt-10 mb-16 text-center text-2xl">
                     <Link href="/public">
                         <h1 className="text-4xl font-semibold">
-                            MS<span className="text-accent">.</span>
+                            MS<span className="text-primary">.</span>
                         </h1>
                     </Link>
                 </div>
@@ -45,8 +45,8 @@ function MobileNav() {
                     {links.map((link, index) => (
                         <Link
                             className={`${
-                                link.path === pathname && "text-white border-b-2 border-white"
-                            } capitalize font-medium transition-all hover:text-white text-accent`}
+                                link.path === pathname && "text-primary border-b-2 border-primary"
+                            } capitalize font-medium transition-all hover:text-primary-hover text-white`}
                             href={link.path}
                             key={index}
                         >

@@ -19,12 +19,11 @@ const AboutMe = () => {
         queryFn: fetchAboutMe,
     });
 
-    console.log(data)
 
 
     if (isLoading) {
         return (
-            <div className="lg:pt-[150px] pt-[120px] font-inter text-[15px] leading-relaxed tracking-wide text-white ">
+            <div className="lg:pt[120px] md:pt-[90px] pt-[70px] font-inter text-[15px] leading-relaxed tracking-wide text-white ">
                 <CommonTitle
                     title="ABOUT ME"
                     subtitle="Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology."
@@ -51,7 +50,7 @@ const AboutMe = () => {
     }
 
     return (
-        <section id="about" className="lg:py-[150px] pt-[120px] leading-relaxed">
+        <section id="about" className="lg:pt[120px] md:pt-[90px] pt-[70px]  leading-relaxed">
             <CommonTitle
                 title="ABOUT ME"
                 subtitle="Discover more about my background, skills, and professional journey in technology and development."

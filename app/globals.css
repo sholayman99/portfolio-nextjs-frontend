@@ -21,7 +21,7 @@ body {
     --radius: 0.5rem;
   }
   body{
-    @apply bg-primary text-white leading-loose;
+    @apply bg-background text-white leading-loose;
   }
   .h1{
     @apply text-[48px] lg:text-[80px] leading-[1.1] font-semibold;
@@ -71,55 +71,55 @@ body {
 
 
 .title-text {
-  font-weight: 500;
-  animation: lights 5s 750ms linear infinite;
-  color: hsl(228, 42%, 86%);
+    font-weight: 500;
+    animation: lights 5s 750ms linear infinite;
+    color: #80DB66; /* Initial green */
 }
 
 @keyframes lights {
     0% {
-        color: #D1D1D1; /* Slightly darker gray */
+        color: #80DB66; /* Green */
         text-shadow:
-                0 0 1em #D1D1D1,
-                0 0 0.125em #d1cfcf,
-                -1em -0.125em 0.5em rgba(184, 180, 180, 0),
-                1em 0.125em 0.5em rgba(184, 180, 180, 0);
+                0 0 1em #80DB66,
+                0 0 0.125em #80DB66,
+                -1em -0.125em 0.5em rgba(0, 128, 0, 0),  /* Darker green */
+                1em 0.125em 0.5em rgba(0, 128, 0, 0);   /* Darker green */
     }
 
     30% {
-        color: #E1E1E1; /* Slightly softer white */
+        color: #68D16C; /* A slightly lighter green */
         text-shadow:
-                0 0 1em #d1cfcf,
-                0 0 0.125em #E1E1E1,
-                -0.5em -0.125em 0.25em #b0abab,
-                0.5em 0.125em 0.25em rgba(184, 180, 180, 0.4);
+                0 0 1em #68D16C,
+                0 0 0.125em #68D16C,
+                -0.5em -0.125em 0.25em #4B9B4F,  /* Medium green */
+                0.5em 0.125em 0.25em rgba(0, 128, 0, 0.4);  /* Darker green */
     }
 
     40% {
-        color: #D1D1D1;
+        color: #80DB66; /* Back to the original green */
         text-shadow:
-                0 0 1em #E1E1E1,
-                0 0 0.125em #D1D1D1,
-                -0.25em -0.125em 0.125em #b0abab,
-                0.25em 0.125em 0.125em rgba(184, 180, 180, 0.4);
+                0 0 1em #80DB66,
+                0 0 0.125em #80DB66,
+                -0.25em -0.125em 0.125em #4B9B4F,  /* Medium green */
+                0.25em 0.125em 0.125em rgba(0, 128, 0, 0.4); /* Darker green */
     }
 
     70% {
-        color: #D1D1D1;
+        color: #A0F28B; /* A lighter, more yellowish green */
         text-shadow:
-                0 0 1em #e1e1e1,
-                0 0 0.125em #d1cfcf,
-                0.5em -0.125em 0.25em #b0abab,
-                -0.5em 0.125em 0.25em rgba(184, 180, 180, 0.4);
+                0 0 1em #A0F28B,
+                0 0 0.125em #A0F28B,
+                0.5em -0.125em 0.25em #68D16C,  /* Lighter green */
+                -0.5em 0.125em 0.25em rgba(0, 128, 0, 0.4);  /* Darker green */
     }
 
     100% {
-        color: #E1E1E1;
+        color: #68D16C; /* Light green */
         text-shadow:
-                0 0 1em #d1cfcf,
-                0 0 0.125em #b0abab,
-                1em -0.125em 0.5em rgba(184, 180, 180, 0),
-                -1em 0.125em 0.5em rgba(184, 180, 180, 0);
+                0 0 1em #68D16C,
+                0 0 0.125em #68D16C,
+                1em -0.125em 0.5em rgba(0, 128, 0, 0),  /* Darker green */
+                -1em 0.125em 0.5em rgba(0, 128, 0, 0);  /* Darker green */
     }
 }
 

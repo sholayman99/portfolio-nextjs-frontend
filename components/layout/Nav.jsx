@@ -33,9 +33,9 @@ export default function Nav() {
                 return (
                     <Link
                         className={`${
-                            link.path === pathname && "text-white border-b-2 border-white"
+                            link.path === pathname && "text-primary border-b-2 border-primary"
                         }
-                     capitalize font-medium transition-all hover:text-white text-accent`}
+                     capitalize font-medium transition-all hover:text-primary-hover text-white`}
                         key={index}
                         href={link.path}
                     >

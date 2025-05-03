@@ -48,10 +48,10 @@ const WorkExperienceCard = ({ workExperience }) => {
     }, [experiencesToShow]);
 
     return (
-        <div className="p-6 rounded-xl backdrop-blur-sm border border-gray-700/50 shadow-xl">
+        <div className="p-6 rounded-xl backdrop-blur-sm border border-primary/50 shadow-xl">
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-2xl font-mono font-semibold text-white flex items-center tracking-tight">
-                    <FiBriefcase className="text-accent mr-3 text-2xl" />
+                <h2 className="text-2xl font-mono font-semibold text-primary-hover flex items-center tracking-tight">
+                    <FiBriefcase className="mr-3 text-2xl" />
                     Work Experience
                 </h2>
 
@@ -73,12 +73,12 @@ const WorkExperienceCard = ({ workExperience }) => {
             {/* All Experiences (conditionally rendered based on showAll) */}
             {Object.entries(experiencesByYear).sort(([yearA], [yearB]) => yearB - yearA).map(([year, yearExperiences]) => (
                 <div key={year}>
-                    <h3 className="text-gray-400 text-sm mb-2">{year}</h3>
-                    <div className="space-y-4 ml-4 border-l border-gray-700 pl-4">
+                    <h3 className="text-white text-sm mb-2">{year}</h3>
+                    <div className="space-y-4 ml-4 border-l border-primary/50 pl-4">
                         {yearExperiences.map((exp, index) => (
                             <motion.div
                                 key={`${year}-${index}`}
-                                className="bg-accent/10 border border-accent/30 p-4 rounded-lg"
+                                className="bg-white/5 border border-primary/50 p-4 rounded-lg"
                                 initial={{ opacity: 0, y: 10 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.1 * index }}
@@ -87,13 +87,13 @@ const WorkExperienceCard = ({ workExperience }) => {
                                 <div className="flex justify-between items-start">
                                     <div>
                                         <h3 className="font-semibold text-lg">{exp.title}</h3>
-                                        <p className="text-accent">{exp.company}</p>
+                                        <p className="text-primary">{exp.company}</p>
                                     </div>
-                                    <span className="text-xs bg-accent/20 text-accent px-2 py-1 rounded">
-                                        {!exp.endDate ? "Current" : "Past"}
+                                    <span className="text-xs bg-white/5 text-white  px-2 py-1 rounded">
+                                        {!exp.endDate ? <span className={"text-primary"}>Current </span> : "Past"}
                                     </span>
                                 </div>
-                                <p className="text-sm text-gray-300 mb-2">
+                                <p className="text-xs text-white/90 mb-2">
                                     {formatDate(exp.startDate)} - {exp.endDate ? formatDate(exp.endDate) : "Present"} | {exp.location}
                                 </p>
                                 <ul className="list-disc list-inside space-y-1 text-sm text-white/70">
@@ -111,7 +111,7 @@ const WorkExperienceCard = ({ workExperience }) => {
             {filteredExperiences.length > 1 && (
                 <button
                     onClick={() => setShowAll(!showAll)}
-                    className="flex items-center text-accent mt-4 text-sm hover:text-white transition-colors"
+                    className="flex items-center text-primary mt-4 text-sm hover:text-white transition-colors"
                 >
                     {showAll ? (
                         <>

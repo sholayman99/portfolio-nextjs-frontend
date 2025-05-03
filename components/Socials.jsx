@@ -35,7 +35,7 @@ const Socials = () => {
                         {/* Icon with perfect color transition */}
                         <div
                             dangerouslySetInnerHTML={{ __html: item.icon }}
-                            className="relative transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] opacity-90 group-hover:opacity-100 [&>svg]:w-[20px] [&>svg]:h-[20px] [&>svg]:fill-white group-hover:[&>svg]:fill-black group-hover:[&>svg]:scale-110"
+                            className="relative transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] opacity-90 group-hover:opacity-100 [&>svg]:w-[20px] [&>svg]:h-[20px] [&>svg]:fill-white group-hover:[&>svg]:fill-background group-hover:[&>svg]:scale-110"
                         />
                     </div>
                 </div>
