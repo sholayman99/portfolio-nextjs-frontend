@@ -7,21 +7,21 @@ import CommonButton from '@/components/common/CommonButton';
 
 const Hero = () => {
     return (
-        <div className="relative flex flex-col xl:flex-row items-center justify-between xl:pt-12 pt-10 overflow-hidden">
+        <section id={"home"} className="relative flex flex-col xl:flex-row items-center justify-between xl:pt-12 pt-10 overflow-hidden">
 
             {/* Content container */}
-            <div className="container flex flex-col xl:flex-row items-center xl:items-start justify-between space-y-10 xl:space-y-0 xl:space-x-16 relative z-10">
+            <div className=" w-full flex flex-col xl:flex-row items-center xl:items-start justify-between space-y-20 lg:space-y-0  relative z-10">
                 {/* Text section */}
-                <div className="flex flex-col items-center xl:items-start text-center xl:text-left xl:w-1/2">
-                    <div className="text-3xl uppercase leading-tight text-primary tracking-wide font-medium font-serif">
+                <div className="order-2 xl:order-none flex flex-col items-center xl:items-start text-center xl:text-left">
+                    <div className="text-lg md:text-xl lg:txt-2xl xl:text-3xl uppercase leading-tight text-primary tracking-wide font-medium font-mono">
                         Hello! I'm
                     </div>
-                    <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-snug text-white font-semibold font-mono mt-3">
-                        <span>Md<span className={"text-primary-hover"}>.</span> Sholayman</span>
+                    <div className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug text-white font-semibold font-inter  mt-6 mb-2">
+                        <span>Md<span className={"text-primary-hover"}>.</span>Sholayman</span>
                     </div>
 
                     {/* Animated text */}
-                    <div className="text-xl lg:text-2xl bg-gradient-to-r from-primary to-white bg-clip-text text-transparent  my-6 italic">
+                    <div className="text-xl lg:text-3xl bg-gradient-to-r from-primary font-serif to-white bg-clip-text text-transparent  mb-6">
                         <TypeAnimation
                             sequence={[
                                 'MERN Stack Developer',
@@ -57,13 +57,11 @@ const Hero = () => {
                 </div>
 
                 {/* Photo section */}
-                <div className="order-1 xl:order-none xl:w-1/2 flex justify-center xl:justify-end">
-                    <Photo
-                        containerStyles="w-[350px] h-[350px] md:w-[400px] md:h-[400px] border-4 border-primary/20 shadow-xl"
-                    />
+                <div className="order-1 xl:order-none  flex justify-center xl:justify-end">
+                    <Photo/>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

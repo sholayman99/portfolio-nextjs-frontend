@@ -11,3 +11,11 @@ export async function fetchAboutMe() {
     let response = await axios.get(`${baseUrl}/about`);
     return response.data;
 }
+
+export async function fetchWork() {
+    let response = await axios.get(`${baseUrl}/projects`);
+    if(response.status === 404){
+        return [];
+    }
+    return response.data;
+}

@@ -51,10 +51,7 @@ const AboutMe = () => {
 
     return (
         <section id="about" className="lg:pt[120px] md:pt-[90px] pt-[70px]  leading-relaxed">
-            <CommonTitle
-                title="ABOUT ME"
-                subtitle="Discover more about my background, skills, and professional journey in technology and development."
-            />
+            <CommonTitle title="ABOUT ME" />
 
             {/* Main Content */}
             <motion.div
