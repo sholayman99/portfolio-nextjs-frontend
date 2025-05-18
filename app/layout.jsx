@@ -17,14 +17,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
     <body>
     <QueryProvider>
-      <LoaderWrapper>
+
        <GradientBackground>
          <Header />
          <main className="lg:pt-[150px] pt-[120px]">
            {children}
          </main>
        </GradientBackground>
-      </LoaderWrapper>
     </QueryProvider>
     </body>
     </html>

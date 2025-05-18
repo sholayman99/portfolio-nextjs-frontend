@@ -2,7 +2,7 @@
 
 const SocialsSkeleton = () => {
     return (
-        <div className="flex gap-x-5 mt-10 animate-pulse">
+        <div className="flex gap-x-5  animate-pulse">
             {[...Array(5)].map((_, i) => (
                 <div key={i}>
                     <div

@@ -2,18 +2,23 @@
 
 import React from 'react';
 import CommonTitle from "@/components/common/CommonTitle";
-import {useQuery} from "@tanstack/react-query";
-import { fetchWork} from "@/api";
+import { useQuery } from "@tanstack/react-query";
+import { fetchWork } from "@/api";
 
 const Work = () => {
-    const { isLoading, isError, data, error, refetch } = useQuery({
+    const { data, isLoading, isError } = useQuery({
         queryKey: ["work"],
         queryFn: fetchWork,
     });
-    console.log(data);
+
+
+    if (isLoading) return <div className="text-center py-20">Loading...</div>;
+    if (isError) return <div className="text-center py-20 text-red-500">Error loading projects</div>;
+
     return (
-        <section id="work" className="lg:pt[120px] md:pt-[90px] pt-[70px]  leading-relaxed">
-            <CommonTitle title="MY WORK" />
+        <section id="work" className="py-20">
+            <CommonTitle title="SELECTED WORK" />
+
         </section>
     );
 };
