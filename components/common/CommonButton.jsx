@@ -16,7 +16,7 @@ const CommonButton = ({
         <button
             className={`relative group overflow-hidden flex items-center justify-center gap-x-2 rounded-[5px] border-[1px] text-white 
             transition-all duration-300 ease-[cubic-bezier(0.4, 0, 0.2, 1)] hover:bg-primary font-[500] hover:font-[600] border-primary
-            hover:border-primary hover:text-background  active:scale-95 ${sizeStyles[size]} ${className} uppercase `}
+            hover:border-primary-hover hover:text-background  active:scale-95 ${sizeStyles[size]} ${className} uppercase `}
         >
             <div className="relative flex items-center gap-x-2">
                 <p className="transition-transform duration-300 group-hover:translate-x-1">
